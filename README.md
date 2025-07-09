@@ -99,5 +99,5 @@ Take a quick look at the key screens of the MediGuide mobile app:
 | 🏠 Home Screen | 📊 Disease Prediction | 💬 ChatBot | 📅 Appointment
 
 |:----------------|:------------------------|:-----------|
-| ![Home Screen](./screenshot/home.png) | ![Disease Prediction](./screenshot/predict.png) | ![ChatBot](./screenshot/chatbot.png) | ![Appointment](./screenshot/appointment.png) |   ![Result](./screenshot/result.png) | ![Profile](./screenshot/profile.png) | 
+| ![Home Screen](./screenshot/home.png) | ![Disease Prediction](./screenshot/predict.png) | ![ChatBot](./screenshot/chatbot.png) | ![Appointment](./screenshot/appointment.png) |   ![Result](./screenshot/result.png) | ![Profile](./screenshot/profile.png) | ![Doctor](./screenshot/doctors.png) | 
 
