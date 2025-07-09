@@ -1,97 +1,103 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🧠💡 MediGuide – Your AI-Powered Personal Health Companion
 
-# Getting Started
+MediGuide is a revolutionary healthcare app that brings together the power of AI-based disease prediction, intelligent symptom analysis, and instant doctor appointment booking — all in one easy-to-use platform. It’s designed to make healthcare more accessible, proactive, and personalized for everyone.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+![React Native](https://img.shields.io/badge/ReactNative-MobileApp-blue?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Version-1.0.0-purple?style=for-the-badge)
 
-## Step 1: Start Metro
+## 📽️ Demo Video
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+🎬 [Click to Watch the Demo](https://drive.google.com/file/d/1W4khkqilvQFg58eGDDLM0P9rhx5bZ7k5/view?usp=drivesdk)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## ✨ Features
 
-```sh
-# Using npm
-npm start
+- 🩺 **Advanced Disease Prediction**
+  - Predicts:
+    - ✅ Heart Disease
+    - ✅ Diabetes
+    - ✅ Liver Disease
+    - ✅ Lung Cancer
+    - ✅ Parkinson’s
+    - ✅ Common Diseases (symptom-based)
+  - Uses ML models trained on real medical datasets  
+  - Detects **over 1,082 diseases**
 
-# OR using Yarn
-yarn start
+- 🤖 **24/7 Intelligent Medical Chatbot**
+  - Understands your symptoms
+  - Provides real-time health insights
+  - Always available for advice
+
+- 📅 **Instant Doctor Appointment Booking**
+  - Connects users to doctors based on predictions
+  - Fast, relevant scheduling  
+  - All in one smooth flow
+
+- 📱 **Beautiful React Native UI**
+  - Gradient cards
+  - Smooth animations
+  - Clean mobile-first design
+
+- 🔄 **Real-time backend API Integration**
+
+## 🌟 Why MediGuide is Unique
+
+- Combines **AI prediction**, **symptom checker**, and **doctor booking**
+- Detects over **1,082 diseases**
+- Bridges the gap between self-assessment and professional care
+- Simple, secure, intuitive interface
+- Helps catch illnesses early for faster, better outcomes  
+- Like having a medical expert in your pocket 📱
+
+
+
+## 🧠 Backend Setup (Flask + ML)
+
+The backend is built using Flask and serves ML models as REST APIs.
+
+### ▶️ Run the Backend
+
+```bash
+cd Backend
+python3 -m venv venv
+source venv/bin/activate     # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
 ```
 
-## Step 2: Build and run your app
+##📱 Frontend Setup (React Native)
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+-The frontend uses React Native with animated screens, chatbot integration, and seamless API calls to the backend.
 
-### Android
+-🛠 Installation
+-From the root directory:
 
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npm install   # or yarn install
 ```
 
-### iOS
+## ▶️ Run the App
+-For Android:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npx react-native run-android
 ```
 
-Then, and every time you update your native dependencies, run:
 
-```sh
-bundle exec pod install
+
+-Make sure Android emulator is running or your device is connected.
+-For iOS (Mac Only):
+
+```bash
+npx pod-install ios
+npx react-native run-ios
 ```
+## 📱 App Screens — Preview
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Take a quick look at the key screens of the MediGuide mobile app:
 
-```sh
-# Using npm
-npm run ios
+| 🏠 Home Screen | 📊 Disease Prediction | 💬 ChatBot | 📅 Appointment
 
-# OR using Yarn
-yarn ios
-```
+|:----------------|:------------------------|:-----------|
+| ![Home Screen](./screenshot/home.png) | ![Disease Prediction](./screenshot/predict.png) | ![ChatBot](./screenshot/chatbot.png) | ![Appointment](./screenshot/appointment.png) |   ![Result](./screenshot/result.png) | ![Profile](./screenshot/profile.png) | 
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
